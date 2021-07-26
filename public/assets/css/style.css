@@ -223,4 +223,36 @@ nav ul li:nth-child(5) a {
 .testimonial p:nth-child(3) {
     margin-bottom: 10px;
 }
+/*7. Image Gallery Section*/
+.image_gallery_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.image_gallery_section img {
+    width: 100%;
+    height: 100%;
+}
+/*8. Footer Section*/
+footer {
+    height: 350px;
+    background-color: hsl(168, 41%, 68%);
+    text-align: center;
+}
+footer h1 {
+    padding-top: 70px;
+}
+footer ul:nth-child(2) li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 30px;
+}
+footer ul:nth-child(3) li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 7px;
+}
 
+footer li a {
+    text-decoration:  none;
+    
+}

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*1. Header, Navigation Bar*/
 nav {
     background: #008080 ;
@@ -124,11 +125,102 @@ nav ul li:nth-child(5) a {
     text-decoration: none;
 }
 .transform_container img {
+    height: 100%;
     width: 100%;
-    height: 100vh;
 }
 /*4. Stand Out Section*/
+.standout_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.standout_container img {
+    height: 100%;
+    width: 100%;
+}
+.standout_container .content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+}
+.standout_container .content_wrapper h3 {
+    font-size: 6rem;
+    margin-bottom: 50px;
+}
+.standout_container .content_wrapper p {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.standout_container .content_wrapper a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
 
 /*5. Graphic Photography Section*/
-
+.graphic_photography_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.graphic_photography_section img {
+    width: 100%;
+    height: 100%;
+}
+.image_container{
+    position: relative;
+}
+.graphic_photography_section .content_wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    bottom: 130px;
+    left: 270px;
+    width: calc(100% - 540px);
+    position: absolute;
+}
+.graphic_photography_section .content_wrapper h5 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.graphic_photography_section .content_wrapper p {
+    font-size: 1.2rem
+}
+/*6. Testimonial Section*/
+.testimonials_section {
+    height: 800px;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonials_section h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.testimonials_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.testimonials_wrapper .testimonial {
+    width: 350px;
+    margin: auto;
+}
+.testimonial img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50px;
+}
+.testimonial p:nth-child(2) {
+    margin-bottom: 50px;
+}
+.testimonial p:nth-child(3) {
+    margin-bottom: 10px;
+}
 

@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- displays site properly based on user's device -->
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/4321e9c1fc.js" crossorigin="anonymous"></script>
@@ -56,17 +64,98 @@
         </div>
     </section>
     <!--4. Stand Out Section-->
-    <section class="standout_section">
+    <section class="standout_container">
         <div class="image_wrapper">
-
+            <img src="assets/images/desktop/image-stand-out.jpg" alt="">
         </div>
-        <div class="">
-
+        <div class="content_wrapper">
+            <h3>Stand out to the right audience</h3>
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+                we'll build and extend your brand in digital places.</p>
+            <a href="#">learn more</a>
         </div>
     </section>
     <!--5. Graphic Photography Section-->
+    <section class="graphic_photography_section">
+        <div class="cherry_image image_container">
+            <img src="assets/images/desktop/image-graphic-design.jpg" alt="">
+            <div class="content_wrapper">
+                <h5>Graphic Design</h5>
+                <p>Greate design makes you memorable. We deliver artwork that underscores your brand message and
+                    captures
+                    potential clients' attention.</p>
+            </div>
+        </div>
+        <div class="orange_image image_container">
+            <img src="assets/images/desktop/image-photography.jpg" alt="">
+            <div class="content_wrapper">
+                <h5>Photography</h5>
+                <p>Increase your credibility by getting the most stunning, high-quality photos that improve your
+                    business
+                    image.</p>
+            </div>
+
+        </div>
+    </section>
+    <!--6. Testimonials-->
+    <section class="testimonials_section">
+        <header>
+            <h1>client testimonials</h1>
+        </header>
+        <div class="testimonials_wrapper">
+            <div class="testimonial item">
+                <img src="assets/images/image-jennie.jpg" alt="">
+                <p>Incredible end result! Our sales increases over 400% when we worked with Sunnyside. Highly recommended!</p>
+                <p>Jennie F.</p>
+                <p>Business Owner</p>
+            </div>
+            <div class="testimonial item">
+                <img src="assets/images/image-emily.jpg" alt="">
+                <p>We put our trust in Sunnyside and they delivered, making sure out needs were met and deadlines were always a hit.</p>
+                <p>Emily R.</p>
+                <p>Marketing Director</p>
+               
+            </div>
+            <div class="testimonial item">
+                <img src="assets/images/image-thomas.jpg" alt="">
+                <p>Sunnyside's enthusiasm coupled with their keen interest in out brand's success made it a satisfying and enjoyable experience.</p>
+                <p>Thomas S.</p>
+                <p>Chief Operating Officer</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1200: {
+                    items: 5,
+                    nav: false,
+                    loop: false
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>

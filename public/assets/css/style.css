@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*1. Header, Navigation Bar*/
+nav {
+    background: #008080 ;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+}
+label.logo {
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 700;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+    z-index: 1000;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 7px 13px;
+}
+nav ul li a:hover {
+    border: 2px solid #079995;
+    color:#fff;
+}
+nav ul li a:hover {
+    background: #079995;
+    transition: 0.5s all ease;
+}
+nav ul li:nth-child(5) a {
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.checkbtn {
+    float: right;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+ }
+.checkbtn i {
+    line-height: 80px;
+}
+#check {
+    display: none;
+}
+/*2. Main Section*/
+.main_container {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: url("../images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+.main_container h1 {
+    position: absolute;
+    top: 200px;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 5rem;
+
+}
+.main_container .arrow_down {
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+
+}
+.main_container .arrow_down img {
+    height: 120px;
+}
+
+/*3. Transform Brand Section*/
+.transform_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.transform_container .content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+}
+.transform_container .content_wrapper h3 {
+    font-size: 6rem;
+    margin-bottom: 50px;
+}
+.transform_container .content_wrapper p {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.transform_container .content_wrapper a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.transform_container img {
+    width: 100%;
+    height: 100vh;
+}
+/*4. Stand Out Section*/
+
+/*5. Graphic Photography Section*/
+
+

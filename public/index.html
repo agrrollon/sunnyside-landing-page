@@ -18,10 +18,22 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&family=Fraunces:wght@700;900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('background')
+            } else {
+                $('nav').removeClass('background')
+            }
+        });
+    </script>
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
 </head>
@@ -35,7 +47,7 @@
                 <i class="fa fa-bars"></i>
             </label>
             <label class="logo" for="">sunnyside</label>
-            <ul>
+            <ul class="menu">
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
@@ -143,23 +155,21 @@
             <h1>client testimonials</h1>
         </header>
         <div class="owl-carousel owl-theme">
-            
+
             <div class="item">
                 <div class="testimonial item">
-                    <img src="assets/images/image-jennie.jpg" alt="">
-                    <p>Incredible end result! Our sales increases over 400% when we worked with Sunnyside. Highly
-                        recommended!</p>
-                    <p>Jennie F.</p>
-                    <p>Business Owner</p>
+                    <img src="assets/images/image-emily.jpg" alt="">
+                    <p>We put our trust in Sunnyside and they delivered, making sure out needs were met and deadlines were always a hit.</p>
+                    <p>Emilu R.</p>
+                    <p>Marketing Director</p>
                 </div>
             </div>
             <div class="item">
                 <div class="testimonial item">
-                    <img src="assets/images/image-jennie.jpg" alt="">
-                    <p>Incredible end result! Our sales increases over 400% when we worked with Sunnyside. Highly
-                        recommended!</p>
-                    <p>Jennie F.</p>
-                    <p>Business Owner</p>
+                    <img src="assets/images/image-thomas.jpg" alt="">
+                    <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+                    <p>Thomas S.</p>
+                    <p>Chief Operating Officer</p>
                 </div>
             </div>
             <div class="item">

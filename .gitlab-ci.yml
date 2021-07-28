@@ -4,7 +4,6 @@ pages:
     - mkdir .public
     - cp -r * .public
     - mv .public public
-    - npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
   artifacts:
     paths:
       - public
